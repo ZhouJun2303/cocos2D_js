@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+}
+
+.wrapper{
+	/* 设置区域的大小 */
+	width:400px;
+	height:600px;
+	/* 给这个区域加上一个边框 */
+	border:1px solid #000;
+	/* 设置这个区域的位置 */
+	margin:80px auto;
+	/* 超出部分不显示 */
+	overflow:hidden;
+}
+
+#score{
+	margin:20px auto;
+	font-size:40px;
+	color:red;
+	text-align:center;
+}
+
+.wrapper #go{
+	width:400px;
+	border:1px solid #000;
+	/* 解决margin塌陷问题 */
+	position:absolute;
+	top:300px;
+	text-align:center;
+	z-index:10;
+}
+
+.wrapper #go a{
+	/* 设置字体大小 */
+	font-size:60px;
+	/* 字体颜色 */
+	color:blue;
+}
+
+.wrapper #main{
+	width:400px;
+	height:600px;
+	position:relative;
+	top:-150px;
+}
+
+.wrapper #main .row .line{
+	width:99px;
+	height:149px;
+	float:left;
+	border-bottom:1px solid #000;	
+	border-right:1px solid #000;
+	background-color:cyan;
+}
